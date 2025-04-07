@@ -1,0 +1,118 @@
+/* Default */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f6f4;
+  }
+/* LOGO */
+#LOGO{
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-left: 30px;
+}
+#logo-img{
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 70px;
+    width: 70px;
+}
+
+#logo-name{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 35px;
+}
+
+/* Hero */
+
+  .hero {
+    background-image: url('/DMSRF_Frontend/assets/img/heroHome.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    color: white;
+  }
+/* NAV */
+  .navbar {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar button {
+    background-color: #8d5e3c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    max-width: 50%;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .hero-content button {
+    margin-top: 10px;
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .news-section {
+    background-color: white;
+    padding: 40px 5%;
+    display: flex;
+    gap: 250px;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+
+  .news-text h2 {
+    color: #400000;
+    margin: 0;
+  }
+
+  .news-text h3 {
+    margin-top: 10px;
+    max-width: 600px;
+  }
+
+  .news-img img {
+    padding-left: 200px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+/* NEWS - Buttons */  
+
+
+  .READ-MORE {
+    background-color: green; 
+    color: white; border: none; 
+    padding: 8px 15px; 
+    border-radius: 8px;
+  }
+
+  .READ-MORE:hover{
+    background-color: aquamarine;
+  }
