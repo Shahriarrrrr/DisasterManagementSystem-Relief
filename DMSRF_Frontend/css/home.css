@@ -44,6 +44,16 @@ body {
     gap: 10px;
   }
 
+  #LOGIN{
+    background-color: #8d5e3c;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+/*NEED MODIFICATION*/  
+
   .navbar button {
     background-color: #8d5e3c;
     border: none;
@@ -52,6 +62,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
   }
+/*NEED MODIFICATION*/
+
 
   .hero-content {
     position: absolute;
@@ -71,7 +83,6 @@ body {
     color: black;
     border: none;
     padding: 10px 20px;
-    border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -103,20 +114,85 @@ body {
   }
 
 
+/*2nd NEWS*/
+.Snews-text {
+    padding-left: 200px;
+}
+
+  .Snews-section {
+    background-color: white;
+    padding: 40px 5%;
+    display: flex;
+    gap: 250px;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+
+  .Snews-text h2 {
+    padding-left: 100px;
+    color: #400000;
+    margin: 0;
+  }
+
+  .Snews-text h3 {
+    padding-left: 100px;
+    margin-top: 10px;
+    max-width: 600px;
+  }
+
+  .Snews-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #SNBTN {
+    margin-left: 100px;
+  }
 /* NEWS - Buttons */  
 
 
-  .READ-MORE {
-    background-color: green; 
-    color: white; border: none; 
-    padding: 8px 15px; 
-    border-radius: 8px;
+.btn{
+    background: none;
+    border: 2px solid #000;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
   }
-
-  .READ-MORE:hover{
-    background-color: aquamarine;
+  .btn:hover{
+    background-color: #000;
+    color: #fff;
   }
-
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .btn1::before{
+    transform: scaleX(0);
+  }
+  .btn2::before{
+    transform: scaleY(0);
+  }
+  .btn1:hover::before{
+    transform: scaleX(1);
+  }
+  .btn2:hover::before{
+    transform: scaleY(1);
+  }
+  
 
   /* SLider */
 
@@ -133,7 +209,7 @@ body {
     display: inline-block;
     white-space: nowrap;
     will-change: transform;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 30s linear infinite;
   }
 
   .marquee-text {
@@ -151,4 +227,10 @@ body {
     100% {
       transform: translateX(-50%);
     }
+  }
+
+/*ANIMATION*/  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
   }
